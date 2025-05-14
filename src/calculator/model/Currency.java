@@ -1,3 +1,5 @@
+package calculator.model;
+
 import com.google.gson.annotations.SerializedName;
 
 public record Currency(@SerializedName("base_code")

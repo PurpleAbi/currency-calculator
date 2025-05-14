@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Inputs {
@@ -18,8 +19,8 @@ public class Inputs {
     }
 
     public void giveInput( double conversionResult ) {
-        System.out.println("La cantidad de  " + moneyAmount + " " + baseCurrency +
-                " es igual a " + conversionResult + " " + targetCurrency + ".");
+        System.out.println("La cantidad de " + moneyAmount + " " + baseCurrency.toUpperCase() +
+                " es igual a " + conversionResult + " " + targetCurrency.toUpperCase() + ".");
     }
 
     public String getTargetCurrency() {

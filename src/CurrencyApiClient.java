@@ -1,3 +1,4 @@
+import calculator.model.Currency;
 import com.google.gson.Gson;
 
 import java.net.URI;
@@ -6,9 +7,9 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class CurrencyApiClient {
-     public Currency search( String baseCode,
-                             String targetCode,
-                             double amount){
+     public Currency search(String baseCode,
+                            String targetCode,
+                            double amount){
          String url = "https://v6.exchangerate-api.com/v6/465156d94f40651b5226cf9f/pair/"
                  + baseCode + "/" + targetCode + "/" + amount;
 
